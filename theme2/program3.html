@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Failre History</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<nav>
+  <a href="../index.html">Главная</a>
+  <a href="../theme2/index.html">Назад к другим программам</a>
+</nav>
+<body>
+    <h1>Failre History</h1>
+    
+    <!-- Локальное меню -->
+    <nav class="anchor-menu">
+            <a href="#description">Описание программы</a>
+            <a href="#features">Особенности ПО</a>
+            <a href="#experiments">Эксперименты</a>
+            <a href="#conclusion">Вывод</a>
+            <a href="#pros-cons">Плюсы и минусы</a>
+         </nav>
+
+    <!-- Информация о программе -->
+    <section id="description">
+      <div class="program-description">
+        <h2>Описание программы</h2>
+        <p><strong>File History</strong> — это встроенная функция резервного копирования, разработанная компанией Microsoft. Она впервые появилась в Windows 8 (2012 г.), пришедшая на смену старой системе «Резервного копирования и восстановления» из Windows 7. С тех пор File History развивалась и вошла в состав Windows 10 и Windows 11 как основной инструмент для автоматического резервного копирования пользовательских данных.</p>
+        <h3>История разработки</h3>
+        <ul>
+          <li><strong>Windows 8 (2012):</strong> первый выпуск функции File History.</li>
+          <li><strong>Windows 8.1 (2013):</strong> улучшена стабильность и расширены настройки.</li>
+          <li><strong>Windows 10 (2015):</strong> интеграция в системные параметры, улучшена производительность.</li>
+          <li><strong>Windows 11 (2021):</strong> File History сохранена как компонент, хотя интерфейс стал менее доступным из настроек.</li>
+        </ul>
+        <h3>Сведения о рассматриваемой версии</h3>
+        <p><strong>Версия Windows:</strong> 10 Pro, сборка 19045.5737</p>
+        <div class="screenshot-gallery">
+          <figure>
+            <img src="images/fh_1.jpg" alt="Скриншот File History в Windows 10" onclick="openModal(this)">
+            <figcaption>Главное окно File History в панели управления</figcaption>
+          </figure>
+        </div>
+        <p>Официальная страница: <a href="https://support.microsoft.com/ru-ru/windows/история-файлов-в-windows-6b5a53ec-4327-7f55-010e-0285f3e01f3a" target="_blank">support.microsoft.com</a></p>
+      </div>
+    </section>
+
+    <!-- Особенности программы -->
+    <section id="features">
+      <div class="program-description">
+        <h2>Особенности</h2>
+        <h3>Общие возможности</h3>
+        <ul>
+          <li>Автоматическое резервное копирование библиотек пользователя</li>
+          <li>Сохранение версий файлов для восстановления конкретных редакций</li>
+          <li>Работа в фоновом режиме</li>
+          <li>Возможность восстановления файлов по дате</li>
+          <li>Использование внешнего диска или сетевого расположения</li>
+          <li>Поддержка планирования и исключения папок</li>
+          <li>Простое восстановление удалённых или изменённых файлов</li>
+        </ul>
+        <h3>Интерфейс и навигация</h3>
+        <ul>
+          <li>Доступ через «Панель управления» → История файлов</li>
+          <li>Или через «Параметры» → Обновление и безопасность → Резервное копирование</li>
+          <li>Меню восстановления позволяет «листать» версии файлов как в проводнике</li>
+          <li>Система уведомляет при отключении диска или остановке копирования</li>
+        </ul>
+        <h3>Интересные возможности</h3>
+        <ul>
+          <li>Сохранение нескольких версий одного и того же файла</li>
+          <li>Быстрое восстановление с сохранением текущей копии</li>
+          <li>Возможность исключить ненужные папки</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Эксперименты -->
+    <section id="experiments">
+      <div class="program-description">
+        <h2>Эксперименты</h2>
+        <p>Из-за отсутствия внешнего накопителя полноценное тестирование функций File History не было проведено. Однако ниже приведены скриншоты, демонстрирующие интерфейс и основные возможности встроенного средства резервного копирования Windows.</p>
+        <div class="screenshot-gallery">
+          <figure>
+            <img src="images/fh_1.jpg" alt="Главное окно File History в панели управления" onclick="openModal(this)">
+            <figcaption>1.Главное окно File History в панели управления</figcaption>
+          </figure>
+          <figure>
+            <img src="images/fh_2.jpg" alt="Пункт меню для выбора диска хранения резервных копий" onclick="openModal(this)">
+            <figcaption>2.Пункт меню для выбора диска хранения резервных копий</figcaption>
+          </figure>
+          <figure>
+            <img src="images/fh_3.jpg" alt="Настройки — исключение папок из копирования" onclick="openModal(this)">
+            <figcaption>3.Настройки — исключение папок из копирования</figcaption>
+          </figure>
+          <figure>
+            <img src="images/fh_4.jpg" alt="Параметры: частота и срок хранения копий" onclick="openModal(this)">
+            <figcaption>4.Параметры: частота и срок хранения копий</figcaption>
+          </figure>
+          <figure>
+            <img src="images/fh_5.jpg" alt="Окно восстановления файлов — просмотр версий" onclick="openModal(this)">
+            <figcaption>5.Окно восстановления файлов — просмотр версий</figcaption>
+          </figure>
+          <figure>
+            <img src="images/fh_6.jpg" alt="Пример выбора конкретной версии файла" onclick="openModal(this)">
+            <figcaption>6.Пример выбора конкретной версии файла</figcaption>
+          </figure>
+          <figure>
+            <img src="images/fh_7.jpg" alt="Подтверждение восстановления выбранного файла" onclick="openModal(this)">
+            <figcaption>7.Подтверждение восстановления выбранного файла</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Вывод -->
+    <section id="conclusion">
+      <div class="program-description">
+        <h2>Вывод</h2>
+        <p><strong>File History</strong> — надёжный и удобный встроенный инструмент для защиты личных данных. Он подходит:</p>
+        <ul>
+          <li>для домашних пользователей — фото, документы, дипломы;</li>
+          <li>для офисных задач — защита проектов, текстов, таблиц;</li>
+          <li>в корпоративной среде — как базовая защита пользовательских файлов при наличии дополнительных решений для системного резервирования.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Плюсы и минусы -->
+    <section id="pros-cons">
+      <div class="program-description">
+        <h2>Плюсы и минусы</h2>
+        <ul>
+          <li><strong>Плюсы:</strong>
+            <ul>
+              <li>Встроен в Windows (не требует установки)</li>
+              <li>Абсолютно бесплатный</li>
+              <li>Прост в использовании</li>
+              <li>Поддерживает версионность</li>
+              <li>Работает в фоне и по расписанию</li>
+            </ul>
+          </li>
+          <li><strong>Минусы:</strong>
+            <ul>
+              <li>Не защищает всю систему целиком</li>
+              <li>Нет создания образов ОС</li>
+              <li>Ограничен только пользовательскими библиотеками</li>
+              <li>Интерфейс скрыт в последних версиях Windows</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Модальное окно для увеличения изображений -->
+    <div id="imgModal" class="modal" onclick="this.style.display='none'">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="imgInModal">
+    </div>
+
+    <script>
+    function openModal(img) {
+        const modal = document.getElementById("imgModal");
+        const modalImg = document.getElementById("imgInModal");
+        modal.style.display = "flex";
+        modalImg.src = img.src;
+    }
+    </script>
+    <footer>
+    <p> Сайт разработала студентка ИЦТМС 3-4 Романова Ольга Алексеевна</p>
+    <p>&copy;2025 Все права защищены </p>
+</footer>
+</body>
+</html>

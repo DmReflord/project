@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iperius Backup — резервное копирование данных</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<nav>
+    <a href="../index.html">Главная</a>
+    <a href="../theme2/index.html">Назад к другим программам</a>
+</nav>
+<body>
+    <h1>Iperius Backup</h1>
+    <main>
+         <nav class="anchor-menu">
+            <a href="#description">Описание программы</a>
+            <a href="#features">Особенности ПО</a>
+            <a href="#experiments">Эксперименты</a>
+            <a href="#conclusion">Вывод</a>
+            <a href="#pros-cons">Плюсы и минусы</a>
+         </nav>
+    <div class="program-description">
+        <h2 id="description">Описание программы</h2>
+        <p><strong>Iperius Backup</strong> – программа резервного копирования для систем Windows, разработанная итальянской компанией Enter Srl. Программа поддерживает различные типы резервного копирования, включая полное, инкрементное и дифференциальное, а также предлагает функции резервного копирования виртуальных машин, баз данных, облачных хранилищ и многое другое.</p>
+        <h3>История разработки</h3>
+        <p>Первое издание программы вышло в январе 2013 года. С 2014 по 2022 годы были добавлены функции резервного копирования виртуальных машин, баз данных, облачных сервисов, Microsoft 365, а также создание образов дисков. С 2023 года появились инструменты Iperius Console и Iperius Remote.</p>
+        <h3>Актуальная версия</h3>
+        <p>По состоянию на апрель 2025 года актуальной версией программы является <strong>8.5.8</strong> от 23 апреля 2025. Сайт: <a href="https://iperiusbackup.com" target="_blank">iperiusbackup.com</a>.</p>
+        <h3>Общие возможности</h3>
+        <ul>
+            <li>Резервное копирование файлов и папок (полное, инкрементное, дифференциальное); поддержка NAS, внешних и сетевых носителей.</li>
+            <li>Работа с базами данных: SQL Server, MySQL, PostgreSQL, Oracle – без остановки служб.</li>
+            <li>Поддержка VMware, Hyper-V с инкрементным/дифференциальным копированием ВМ.</li>
+            <li>Облачное резервное копирование: Google Drive, Dropbox, OneDrive, Amazon S3, Azure и др.</li>
+            <li>Резервное копирование Microsoft 365: OneDrive, Exchange Online, SharePoint, Teams.</li>
+            <li>Создание образов дисков и bare-metal восстановление.</li>
+            <li>Гибкий планировщик заданий, запуск скриптов до/после выполнения.</li>
+            <li>Шифрование AES-256, защита от программ-вымогателей.</li>
+            <li>Уведомления по email, логирование и отчётность.</li>
+            <li>Интеграция с Iperius Console для централизованного управления.</li>
+        </ul>
+    </div>
+
+    <!-- Особенности программы -->
+    <div class="program-description">
+        <h2 id="features">Особенности ПО</h2>
+        <p>Программное обеспечение Iperius Backup 8.5.8 Freeware отличается простой навигацией, доступным интерфейсом и широкими возможностями для резервного копирования и восстановления данных. Несмотря на то, что бесплатная версия ограничена по сравнению с коммерческими редакциями, она предоставляет базовый набор функций, достаточный для типичных задач.</p>
+        <h3>1. Интерфейс и навигация</h3>
+        <p>Главное окно программы построено по классическому принципу Windows-приложений и состоит из четырёх вкладок верхнего меню:</p>
+        <ul>
+            <li><strong>Home (Главная)</strong> — отображаются все созданные задания, информация о последнем запуске и статусе.</li>
+            <li><strong>Восстановление</strong> — запуск процесса восстановления из резервных копий.</li>
+            <li><strong>Инструменты</strong> — дополнительные утилиты: загрузочный носитель, управление образами, облачное взаимодействие.</li>
+            <li><strong>Об (О программе)</strong> — информация о версии, лицензии, документации.</li>
+        </ul>
+        <p>Кнопка «Создать новый бэкап» запускает мастер настройки задания.</p>
+        <div class="screenshot-gallery">
+            <figure>
+                <img src="images/ip_exp1_1.jpg" alt="Интерфейс Iperius Backup" onclick="openModal(this)">
+                <figcaption>Главное окно программы Iperius Backup</figcaption>
+            </figure>
+        </div>
+
+        <h3>2. Упрощённое управление заданиями</h3>
+        <ul>
+            <li>Список заданий с колонками: имя, последний запуск, статус, результат.</li>
+            <li>Функции повторного запуска, изменения настроек и удаления задания.</li>
+            <li>Фильтрация по статусу: успешно, с ошибками, не запущено.</li>
+        </ul>
+
+        <h3>3. Интересные возможности</h3>
+        <ul>
+            <li>Интеграция с облаком — поддержка FTP/S3 (в расширенной версии).</li>
+            <li>Совместимость с внешними модулями: Iperius Remote, Iperius Storage S3/FTPS, Iperius Console RMM.</li>
+            <li>Многоязычная поддержка, включая русский интерфейс.</li>
+            <li>Работа на старых ПК благодаря низким системным требованиям.</li>
+        </ul>
+    </div>
+
+    <!-- Эксперименты -->
+    <div class="program-description">
+        <h2 id="experiments">Эксперименты</h2>
+        <p>В рамках тестирования программы были проведены несколько экспериментов, которые подтвердили эффективность и стабильность работы в реальных условиях эксплуатации. Эксперименты показали, что программа может эффективно справляться с нагрузками.</p>
+         <p><strong>Эксперимент 1 – Копирование папки</strong></p>
+        <div class="screenshot-gallery">
+            <figure>
+                <img src="images/ip_exp1_1.jpg" alt="Создание задания" onclick="openModal(this)">
+                <figcaption>1.Создание нового задания резервного копирования</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ip_exp1_2.jpg" alt="Выбор типа элемента" onclick="openModal(this)">
+                <figcaption>2.Выбор типа элемента: файл или папка</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ip_exp1_3.jpg" alt="Выбор папки для копирования" onclick="openModal(this)">
+                <figcaption>3.Указание пути к папке для копирования</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ip_exp1_4.jpg" alt="Подтверждение пути к папке" onclick="openModal(this)">
+                <figcaption>4.Подтверждение выбора источника резервного копирования</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ip_exp1_5.jpg" alt="Окно выбора папки" onclick="openModal(this)">
+                <figcaption>5.Окно выбора папки в файловом проводнике</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ip_exp1_6.jpg" alt="Места назначения" onclick="openModal(this)">
+                <figcaption>6.Переход на вкладку «Места назначения»</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ip_exp1_7.jpg" alt="Выбор папки назначения" onclick="openModal(this)">
+                <figcaption>7.Добавление папки назначения</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ip_exp1_8.jpg" alt="Указание пути назначения" onclick="openModal(this)">
+                <figcaption>8.Выбор целевой папки для копирования</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ip_exp1_9.jpg" alt="Выбор типа резервного копирования" onclick="openModal(this)">
+                <figcaption>9.Настройка типа резервного копирования</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ip_exp1_10.jpg" alt="Назначение подтверждено" onclick="openModal(this)">
+                <figcaption>10.Подтверждение параметров назначения</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ip_exp1_11.jpg" alt="Краткое описание задания" onclick="openModal(this)">
+                <figcaption>11.Краткое описание задания резервного копирования</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ip_exp1_12.jpg" alt="Сохранение задания" onclick="openModal(this)">
+                <figcaption>12.Сохранение задания с описанием</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ip_exp1_13.jpg" alt="Запуск бэкапа вручную" onclick="openModal(this)">
+                <figcaption>13.Запуск задания вручную</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ip_exp1_14.jpg" alt="Процесс копирования запущен" onclick="openModal(this)">
+                <figcaption>14.Процесс копирования в реальном времени</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ip_exp1_15.jpg" alt="Результат выполнения и содержимое папки" onclick="openModal(this)">
+                <figcaption>15.Успешное завершение и проверка результата в целевой папке</figcaption>
+            </figure>
+        </div>
+    </div>
+        <div class="program-description">
+        <p><strong>Эксперимент 2 – Плановое копирование папки по расписанию</strong></p>
+        <p>В данном эксперименте было настроено автоматическое выполнение резервного копирования по расписанию. Использовался тот же принцип копирования папки, но запуск происходил по таймеру.</p>
+    
+        <div class="screenshot-gallery">
+            <figure>
+                <img src="images/ip_exp2_1.jpg" alt="Настройка планировщика" onclick="openModal(this)">
+                <figcaption>1.Установка расписания: выполнение по четвергам в 13:22</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ip_exp2_2.jpg" alt="Создание задания копирования папки 2" onclick="openModal(this)">
+                <figcaption>2.Новое задание: копирование папки 2</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ip_exp2_3.jpg" alt="Процесс выполнения по расписанию" onclick="openModal(this)">
+                <figcaption>3.Процесс запуска резервного копирования согласно расписанию</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ip_exp2_4.jpg" alt="Успешное завершение задания 2" onclick="openModal(this)">
+                <figcaption>4.Завершение задания: статус «выполнено успешно»</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ip_exp2_5.jpg" alt="Описание задания" onclick="openModal(this)">
+                <figcaption>5.Задание содержит пометку: «Эксперимент 2», расписание включено</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ip_exp2_6.jpg" alt="Папка назначения" onclick="openModal(this)">
+                <figcaption>6.Результат выполнения в целевой папке: появилась новая резервная копия</figcaption>
+            </figure>
+        </div>
+    </div>
+
+     <div class="program-description">
+    <p><strong>Эксперимент 3 – Восстановление резервной копии</strong></p>
+    <p>Целью данного эксперимента было протестировать возможность восстановления файлов из ранее созданной резервной копии.</p>
+
+    <div class="screenshot-gallery">
+        <figure>
+            <img src="images/ip_exp3_1.jpg" alt="Содержимое исходной папки" onclick="openModal(this)">
+            <figcaption>1.Содержимое исходной папки до восстановления</figcaption>
+        </figure>
+        <figure>
+            <img src="images/ip_exp3_2.jpg" alt="Удаление файла перед восстановлением" onclick="openModal(this)">
+            <figcaption>2.Удаление одного из файлов из папки</figcaption>
+        </figure>
+        <figure>
+            <img src="images/ip_exp3_3.jpg" alt="Выбор бэкапа для восстановления" onclick="openModal(this)">
+            <figcaption>3.Выбор задания для восстановления резервной копии</figcaption>
+        </figure>
+        <figure>
+            <img src="images/ip_exp3_4.jpg" alt="Выбор версии резервной копии" onclick="openModal(this)">
+            <figcaption>4.Просмотр данных внутри выбранного бэкапа</figcaption>
+        </figure>
+        <figure>
+            <img src="images/ip_exp3_5.jpg" alt="Путь восстановления" onclick="openModal(this)">
+            <figcaption>5.Настройка пути восстановления файлов</figcaption>
+        </figure>
+        <figure>
+            <img src="images/ip_exp3_6.jpg" alt="Подтверждение восстановления" onclick="openModal(this)">
+            <figcaption>6.Подтверждение параметров и запуск восстановления</figcaption>
+        </figure>
+        <figure>
+            <img src="images/ip_exp3_7.jpg" alt="Лог восстановления" onclick="openModal(this)">
+            <figcaption>7.Лог восстановления: операция прошла успешно</figcaption>
+        </figure>
+        <figure>
+            <img src="images/ip_exp3_8.jpg" alt="Папка после восстановления" onclick="openModal(this)">
+            <figcaption>8.Файл успешно восстановлен в исходную папку</figcaption>
+        </figure>
+    </div>
+     </div>
+     <div class="program-description">
+        <p><strong>Эксперимент 4 – Инкрементное резервное копирование</strong></p>
+        <p>Целью данного эксперимента было протестировать возможность создания инкрементных резервных копий с хранением одного полного бэкапа и нескольких дополнительных.</p>
+
+        <div class="screenshot-gallery">
+            <figure>
+                <img src="images/ip_exp4_1.jpg" alt="Настройка инкрементного бэкапа" onclick="openModal(this)">
+                <figcaption>1.Настройка параметров: хранить один полный и несколько инкрементальных бэкапов</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ip_exp4_2.jpg" alt="Добавление файлов в задание" onclick="openModal(this)">
+                <figcaption>2.Указание исходных файлов для резервного копирования</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ip_exp4_3.jpg" alt="Назначение папки назначения" onclick="openModal(this)">
+                <figcaption>3.Установка папки назначения для хранения резервных копий</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ip_exp4_4.jpg" alt="Дополнение набора файлов" onclick="openModal(this)">
+                <figcaption>4.Добавление новых файлов в задание для проверки инкрементного копирования</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ip_exp4_5.jpg" alt="Успешный запуск резервного копирования" onclick="openModal(this)">
+                <figcaption>5.Успешное выполнение задания с инкрементным копированием</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ip_exp4_6.jpg" alt="Содержимое папки назначения" onclick="openModal(this)">
+                <figcaption>6.Папка назначения содержит полную и дополнительную копии</figcaption>
+            </figure>
+        </div>
+        </div>
+    <!-- Вывод -->
+    <div class="program-description">
+        <h2 id="conclusion">Вывод</h2>
+               <p>Программа <strong>Iperius Backup</strong> зарекомендовала себя как надёжное и универсальное решение для резервного копирования данных. Она сочетает широкий функционал с удобным интерфейсом, позволяя выполнять как базовые операции резервирования, так и сложные задачи — от работы с виртуальными машинами и базами данных до облачных сервисов и Microsoft 365.</p>
+        <p>Проведённые эксперименты подтвердили стабильность, скорость и корректность работы программы в различных сценариях. Несмотря на некоторые ограничения в бесплатной версии, Iperius Backup отлично подходит как для домашних пользователей, так и для малых организаций, обеспечивая высокий уровень безопасности и автоматизации.</p>
+   </div>
+
+    <!-- Плюсы и минусы -->
+    <div class="program-description">
+        <h2 id="pros-cons">Плюсы и минусы</h2>
+        <ul>
+                       <li><strong>Плюсы:</strong>
+                <ul>
+                    <li>Широкий функционал даже в бесплатной версии.</li>
+                    <li>Поддержка резервного копирования баз данных, ВМ и Microsoft 365.</li>
+                    <li>Гибкое планирование задач.</li>
+                    <li>Низкие системные требования.</li>
+                    <li>Интерфейс на русском языке.</li>
+                    <li>Поддержка инкрементного и дифференциального копирования.</li>
+                </ul>
+            </li>
+            <li><strong>Минусы:</strong>
+                <ul>
+                    <li>Ограничения бесплатной версии (нет облаков, БД, ВМ).</li>
+                    <li>Устаревший внешний вид интерфейса.</li>
+                    <li>Отсутствие автоматической настройки для новичков.</li>
+                    <li>Некоторые функции требуют покупки дополнительных модулей.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+</main>
+<footer>
+    <p> Сайт разработала студентка ИЦТМС 3-4 Романова Ольга Алексеевна</p>
+    <p>&copy;2025 Все права защищены </p>
+</footer>
+</body>
+<!-- Модальное окно -->
+<div id="imgModal" class="modal" onclick="this.style.display='none'">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="imgInModal">
+</div>
+
+<script>
+function openModal(img) {
+    const modal = document.getElementById("imgModal");
+    const modalImg = document.getElementById("imgInModal");
+    modal.style.display = "flex";
+    modalImg.src = img.src;
+}
+</script>
+</html>

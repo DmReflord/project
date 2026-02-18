@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EaseUs Todo Backup</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+      <a href="../index.html">Главная</a>
+      <a href="../theme2/index.html">Назад к другим программам</a>
+    </nav>
+    <header>
+    <h1>EaseUs Todo Backup</h1>
+    </header> 
+    <nav class="anchor-menu">
+            <a href="#description">Описание программы</a>
+            <a href="#features">Особенности ПО</a>
+            <a href="#experiments">Эксперименты</a>
+            <a href="#conclusion">Вывод</a>
+            <a href="#pros-cons">Плюсы и минусы</a>
+         </nav>
+
+    <div class="program-description">
+    <!-- Информация о программе -->
+    <section id="description">
+      <h2>Описание программы</h2>
+      <p><strong>EaseUS Todo Backup</strong> разработана китайской компанией EaseUS, основанной в 2004 году. Программа предназначена для резервного копирования и восстановления данных на компьютерах с операционной системой Windows. За годы своего существования она прошла множество обновлений, улучшая функциональность и интерфейс.</p>
+      <h3>История разработки</h3>
+      <ul>
+        <li><strong>2009:</strong> Первая версия с базовыми функциями резервного копирования.</li>
+        <li><strong>2010–2012:</strong> Поддержка Exchange Server, SQL, инкрементное и дифференциальное копирование.</li>
+        <li><strong>2013–2015:</strong> Новый интерфейс, поддержка облака, загрузочный носитель.</li>
+        <li><strong>2016–2018:</strong> Поддержка Windows 10, улучшения в производительности и клонировании.</li>
+        <li><strong>2019–2021:</strong> Поддержка браузеров и игр, интеграция с облаком.</li>
+        <li><strong>2022–2024:</strong> Поддержка ARM, улучшение сетевого и облачного взаимодействия.</li>
+      </ul>
+      <h3>Сведения об актуальной версии</h3>
+      <p>Актуальная версия на май 2025 года — <strong>EaseUS Todo Backup Free 2025 (2025-02-07)</strong><br>
+      Поддерживаемые ОС: Windows 7–11<br>
+      Интерфейс: английский<br>
+      Размер установочного файла: 2.99 МБ<br>
+      Лицензия: бесплатная<br>
+      Ссылка на сайт: <a href="https://www.easeus.com/backup-software/tb-free.html" target="_blank">easeus.com</a></p>
+      <img src="images/ea_exp1_1.jpg" alt="Главное меню программы с датой запуска" style="max-width: 100%; margin-top: 10px;" onclick="openModal(this)">
+    </section>
+
+    <!-- Особенности программы -->
+    <section id="features">
+      <h2>Особенности</h2>
+      <h3>Общие возможности</h3>
+      <ul>
+        <li>Системное резервное копирование с возможностью восстановления</li>
+        <li>Выборочное резервное копирование файлов и папок</li>
+        <li>Копирование физических и логических дисков/разделов</li>
+        <li>Инкрементное и дифференциальное копирование</li>
+        <li>Планирование задач по расписанию</li>
+        <li>Клонирование дисков и разделов (в том числе загрузочных)</li>
+        <li>Сохранение в облако (Google Drive, Dropbox, OneDrive)</li>
+        <li>Создание загрузочного носителя</li>
+        <li>Шифрование, защита паролем, управление версиями</li>
+      </ul>
+      <h3>Интерфейс и навигация</h3>
+      <p>Интерфейс организован по карточкам: Backup Systems, Clone, New Sync. Навигационная панель включает Browse to Recover и Tools. Всё выполнено в минималистичном стиле: крупные кнопки, понятные надписи, шаговые мастера.</p>
+      <h3>Интересные возможности</h3>
+      <ul>
+        <li>Интеграция с аккаунтом EaseUS для облачного хранения</li>
+        <li>Раздел «Инструменты» с расширенными функциями</li>
+        <li>Поддержка резервного копирования установленных игр (Steam, Epic Games и др.), сохранений и библиотек (например, D:\SteamLibrary)</li>
+      </ul>
+    </section>
+
+    <!-- Эксперименты -->
+    <section id="experiments">
+      <h2>Эксперименты</h2>
+
+      <h3>Эксперимент 1 — резервное копирование файла</h3>
+      <p><strong>Постановка задачи:</strong> проверить возможность создания резервной копии одного файла.</p>
+      <p><strong>Выполняемые действия:</strong> запущен мастер резервного копирования, выбран отдельный файл на диске, указан путь для сохранения копии.</p>
+      <p><strong>Результат:</strong> файл успешно сохранён в заданное место в формате резервной копии.</p>
+      <div class="screenshot-gallery">
+        <figure>
+          <img src="images/ea_exp1_1.jpg" style="max-width:100%" onclick="openModal(this)">
+          <figcaption>1.Запуск мастера резервного копирования.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/ea_exp1_2.jpg" style="max-width:100%" onclick="openModal(this)">
+          <figcaption>2.Выбор типа задачи «File Backup».</figcaption>
+        </figure>
+        <figure>
+          <img src="images/ea_exp1_3.jpg" style="max-width:100%" onclick="openModal(this)">
+          <figcaption>3.Указание пути к файлу.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/ea_exp1_4.jpg" style="max-width:100%" onclick="openModal(this)">
+          <figcaption>4.Выбор места сохранения.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/ea_exp1_5.jpg" style="max-width:100%" onclick="openModal(this)">
+          <figcaption>5.Завершение задачи.</figcaption>
+        </figure>
+      </div>
+
+      <h3>Эксперимент 2 — копирование файлов игры</h3>
+      <p><strong>Постановка задачи:</strong> протестировать возможность резервного копирования установленной игры.</p>
+      <p><strong>Выполняемые действия:</strong> выбрана папка с установленной игрой Steam, произведено резервное копирование на внешний диск.</p>
+      <p><strong>Результат:</strong> резервная копия создана успешно, подтверждена возможность восстановления.</p>
+      <div class="screenshot-gallery">
+        <figure>
+          <img src="images/ea_exp2_1.jpg" style="max-width:100%" onclick="openModal(this)">
+          <figcaption>1.Выбор папки с игрой.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/ea_exp2_2.jpg" style="max-width:100%" onclick="openModal(this)">
+          <figcaption>2.Настройка параметров задачи.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/ea_exp2_3.jpg" style="max-width:100%" onclick="openModal(this)">
+          <figcaption>3.Подтверждение выполнения копирования.</figcaption>
+        </figure>
+      </div>
+
+      <h3>Эксперимент 3 — копирование папки по расписанию</h3>
+      <p><strong>Постановка задачи:</strong> настроить автоматическое резервное копирование выбранной папки по расписанию.</p>
+      <p><strong>Выполняемые действия:</strong> задано ежедневное копирование папки «Документы» с уведомлением.</p>
+      <p><strong>Результат:</strong> процесс успешно выполнялся согласно графику, подтверждено сохранение новых версий файлов.</p>
+      <div class="screenshot-gallery">
+        <figure>
+          <img src="images/ea_exp3_1.jpg" style="max-width:100%" onclick="openModal(this)">
+          <figcaption>1.Настройка расписания копирования.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/ea_exp3_2.jpg" style="max-width:100%" onclick="openModal(this)">
+          <figcaption>2.Указание папки «Документы».</figcaption>
+        </figure>
+        <figure>
+          <img src="images/ea_exp3_3.jpg" style="max-width:100%" onclick="openModal(this)">
+          <figcaption>3.Ввод параметров расписания.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/ea_exp3_4.jpg" style="max-width:100%" onclick="openModal(this)">
+          <figcaption>4.Применение параметров задачи.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/ea_exp3_5.jpg" style="max-width:100%" onclick="openModal(this)">
+          <figcaption>5.Отображение задачи в списке.</figcaption>
+        </figure>
+      </div>
+
+      <h3>Эксперимент 4 — восстановление удалённого файла</h3>
+      <p><strong>Постановка задачи:</strong> проверить возможность восстановления файла, удалённого после резервного копирования.</p>
+      <p><strong>Выполняемые действия:</strong> файл был удалён вручную, затем запущено восстановление из предыдущей резервной копии.</p>
+      <p><strong>Результат:</strong> файл был успешно восстановлен в исходное место.</p>
+      <div class="screenshot-gallery">
+        <figure>
+          <img src="images/ea_exp4_1.jpg" style="max-width:100%" onclick="openModal(this)">
+          <figcaption>1.Проверка резервной копии.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/ea_exp4_2.jpg" style="max-width:100%" onclick="openModal(this)">
+          <figcaption>2.Удаление файла вручную.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/ea_exp4_3.jpg" style="max-width:100%" onclick="openModal(this)">
+          <figcaption>З.Запуск функции восстановления.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/ea_exp4_4.jpg" style="max-width:100%" onclick="openModal(this)">
+          <figcaption>4.Выбор резервной копии для восстановления.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/ea_exp4_5.jpg" style="max-width:100%" onclick="openModal(this)">
+          <figcaption>5.Успешное восстановление файла.</figcaption>
+        </figure>
+      </div>
+
+      <h3>Эксперимент 5 — добавление фильтра по расширению файла</h3>
+      <p><strong>Постановка задачи:</strong> настроить фильтрацию файлов по расширению, чтобы исключить ненужные данные из копирования.</p>
+      <p><strong>Выполняемые действия:</strong> в мастере задания задан фильтр, исключающий файлы .mp4 и .exe, подтвержден список копируемых данных.</p>
+      <p><strong>Результат:</strong> резервная копия успешно создана, указанные типы файлов исключены.</p>
+      <div class="screenshot-gallery">
+        <figure>
+          <img src="images/ea_exp5_1.jpg" style="max-width:100%" onclick="openModal(this)">
+          <figcaption>1.Выбор фильтрации по типу файлов.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/ea_exp5_2.jpg" style="max-width:100%" onclick="openModal(this)">
+          <figcaption>2.Добавление расширений .mp4 и .exe.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/ea_exp5_3.jpg" style="max-width:100%" onclick="openModal(this)">
+          <figcaption>3.Применение фильтра.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/ea_exp5_4.jpg" style="max-width:100%" onclick="openModal(this)">
+          <figcaption>4.Подтверждение списка копируемых данных.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/ea_exp5_5.jpg" style="max-width:100%" onclick="openModal(this)">
+          <figcaption>5.Просмотр итогового задания.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/ea_exp5_6.jpg" style="max-width:100%" onclick="openModal(this)">
+          <figcaption>6.Проверка параметров.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/ea_exp5_7.jpg" style="max-width:100%" onclick="openModal(this)">
+          <figcaption>7.Запуск задачи.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/ea_exp5_8.jpg" style="max-width:100%" onclick="openModal(this)">
+          <figcaption>8.Завершение резервного копирования.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Вывод -->
+    <section id="conclusion">
+              <h2>Вывод</h2>
+      <p>EaseUS Todo Backup — это надёжное и функциональное программное обеспечение для резервного копирования и восстановления данных. Проведённые эксперименты показали высокую стабильность, удобство интерфейса и широкие возможности программы. Она отлично подходит как для домашних пользователей, так и для малого бизнеса, обеспечивая защиту данных от сбоев, вирусов и случайных удалений. Простота настройки задач и гибкие сценарии копирования делают её удобным инструментом даже для начинающих пользователей.</p>
+    </section>
+
+    <!-- Плюсы и минусы -->
+    <section id="pros-cons">
+              <h2>Плюсы и минусы</h2>
+      <ul>
+        <li><strong>Плюсы:</strong>
+          <ul>
+            <li>Понятный и современный интерфейс</li>
+            <li>Поддержка резервного копирования файлов, систем, игр и облака</li>
+            <li>Инкрементное и дифференциальное копирование</li>
+            <li>Поддержка автоматического расписания</li>
+            <li>Создание загрузочного носителя</li>
+            <li>Подходит для домашних и корпоративных пользователей</li>
+          </ul>
+        </li>
+        <li><strong>Минусы:</strong>
+          <ul>
+            <li>Нет поддержки русского языка в интерфейсе</li>
+            <li>Некоторые функции доступны только в платной версии</li>
+            <li>Может быть сложновато для совсем неопытных пользователей</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    </div>
+
+<!-- Модальное окно для увеличения изображений -->
+<div id="imgModal" class="modal" onclick="this.style.display='none'">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="imgInModal">
+</div>
+
+<script>
+function openModal(img) {
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("imgInModal");
+  modal.style.display = "flex";
+  modalImg.src = img.src;
+}
+</script>
+<footer>
+    <p> Сайт разработала студентка ИЦТМС 3-4 Романова Ольга Алексеевна</p>
+    <p>&copy;2025 Все права защищены </p>
+</footer>
+</body>
+</html>
